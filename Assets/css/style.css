@@ -1,0 +1,78 @@
+:root {
+  --background-color:#13293d;
+  --text-color:#fff;
+  --header-background:darkblue;
+  --nav-color: rgb(14, 158, 67);
+
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: var(--header-background);
+  color: var(--light);
+}
+
+nav {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+nav div > * {
+  padding: 25px;
+  font-size: 24px;
+  width: 250px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.projects {
+    width:33%;
+}
+
+.profile-photo{
+
+}
+
+
+/* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
+@media screen and (max-width: 992px) {
+    .projects{
+      width: 50%;
+    }
+  }
+  /* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .projects{
+      width: 100%;
+    }
+  }
