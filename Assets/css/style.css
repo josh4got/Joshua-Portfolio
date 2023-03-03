@@ -1,68 +1,78 @@
 /* variables to easily change color pallete of the page*/
 :root {
   --background-color:#13293d;
-  --text-color:#fff;
-  --header-background:darkblue;
+  --text-color:white;
+  --01color:grey;
+
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*GENERAL STYLES */
 body {
+  margin: 0 auto;
   font-size: 21px;
-  text-decoration-color: var(--text-color);
-  background-color: var(--background-color);
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration-color:white;
+  background-color: #CBF6F0;
 }
 
-h1 {
-  font-size: 72px;
-  margin-bottom: 10px;
+h1,
+h2 {
+  padding: 25px;
+text-align: center;
 }
 
 h2 {
-  font-size: 48px;
-  margin-bottom: 10px; 
+  margin: 0 auto;
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
+  
 }
 
 /* HEADER AND NAV STYLES */
 header {
+  min-height: 25px;
   display: flex;
-  align-items: center;
-  height: 100px;
-  width: 100%;
-  background-color: var(--header-background);
+  background-color: var(--01color);
   color: var(--light);
 }
 
 nav {
-  display: flex;
-  flex-basis: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
+display: flex;
 }
 
-nav section > * {
-  padding: 25px;
-  font-size: 24px;
-  width: 250px;
-}
-
-footer {
+footer  ul{
+  background-color: var(--01color);
   display: flex;
   flex-direction: row;
-  height: 100px;
+  min-height: 25px;
   width: 100%;
 }
 /* Utilities */
+
+.container1 {
+  position: relative;
+  max-width: 1600px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container-1-content {
+  position: absolute; /* Position the background text */
+  bottom:0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: lightgrey; /* Grey text */
+  width: 100%; /* Full width */
+ padding: 20px
+} 
+
 .profile-photo {
-  height: 400px;
-  width: 400px;
   margin-bottom: 25px;
-  background-image: url("../images/pexels-vie-studio-4439444.jpg");
+  background-image: url("placeholer.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -71,19 +81,3 @@ footer {
   height: 400px;
   width: 400px;
 }
-
-/* applies changes at 992px or smaller for tablets*/
-@media screen and (max-width: 992px) {
-    h1{font-size: 48px;}
-    h2{font-size: 36px;}
-    body{font-size: 18;}
-   
-  }
-
-/* applies style changes at 768px or smaller for phones*/
-  @media screen and (max-width: 768px) {
-    h1{font-size: 48px;}
-    h2{font-size: 36px;}
-    body{font-size: 18px;}
-    
-  }
