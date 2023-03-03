@@ -1,34 +1,38 @@
+/* variables to easily change color pallete of the page*/
 :root {
   --background-color:#13293d;
   --text-color:#fff;
   --header-background:darkblue;
-  --nav-color: rgb(14, 158, 67);
-
 }
 
+/*GENERAL STYLES */
 body {
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
+  font-size: 21px;
+  text-decoration-color: var(--text-color);
   background-color: var(--background-color);
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 72px;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 10px; 
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* HEADER AND NAV STYLES */
 header {
   display: flex;
   align-items: center;
   height: 100px;
+  width: 100%;
   background-color: var(--header-background);
   color: var(--light);
 }
@@ -39,40 +43,47 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  height: 100%;
 }
 
-nav div > * {
+nav section > * {
   padding: 25px;
   font-size: 24px;
   width: 250px;
 }
 
-main {
+footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+}
+/* Utilities */
+.profile-photo {
+  height: 400px;
+  width: 400px;
+  margin-bottom: 25px;
+  background-image: url("../images/pexels-vie-studio-4439444.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-
-
-.projects {
-    width:33%;
+.project-card {
+  height: 400px;
+  width: 400px;
 }
 
-.profile-photo{
-
-}
-
-
-/* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
+/* applies changes at 992px or smaller for tablets*/
 @media screen and (max-width: 992px) {
-    .projects{
-      width: 50%;
-    }
+    h1{font-size: 48px;}
+    h2{font-size: 36px;}
+    body{font-size: 18;}
+   
   }
-  /* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+
+/* applies style changes at 768px or smaller for phones*/
   @media screen and (max-width: 768px) {
-    .projects{
-      width: 100%;
-    }
+    h1{font-size: 48px;}
+    h2{font-size: 36px;}
+    body{font-size: 18px;}
+    
   }
