@@ -12,9 +12,11 @@
 
 /*GENERAL STYLES */
 body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   max-width: 60rem;
-  margin: 0 auto;
-  font-size: 21px;
+  margin: 0;
   font-family:Arial, Helvetica, sans-serif;
   text-decoration-color:white;
   background-color: #CBF6F0;
@@ -22,83 +24,67 @@ body {
 
 h1,
 h2 {
-  padding: 25px;
-text-align: center;
+  padding: 20px;
+  text-align: center;
+  font-size:
 }
-
-h2 {
-  margin: 0 auto;
-}
-
-main,
-aside {
-[padding: 0 1em;]
-  
-}
+h1 { font-size: 2.5em;}
+h2 { font-size: 2em;}
+h3 { font-size: 1.5em;}
 p {
-  font-size: 16px;
+  font-size: 1em;
+  margin: 0 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 /* HEADER AND NAV STYLES */
-header {
+header,
+footer ul {
   min-height: 30px;
   background-color: var(--01color);
-  color: var(--light);
   gap: 1rem;
 }
 
-nav ul{
+nav ul,
+footer ul {
 display: flex;
 flex-direction: row;
 justify-content: center;
 gap: 1rem;
-}
-
-footer  ul{
-  background-color: var(--01color);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  min-height: 30px;
-  width: 100%;
-
-  gap: 1rem;
-
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-footer ul li {
-  gap: 1rem;
+background-color: var(--01color);
 }
 
 /* Utilities */
-/* container for highlighted project */
+
 .container1 {
   position: relative;
   max-width: 600px;
-  margin: 0 auto;
 }
 
 .container2 {
   position: relative;
   max-width: 600px;
-  margin: 0 auto;
+  max-height: 200px;
+}
+
+.container3 {
+  position: relative;
+  max-width: 600px;
 }
 
 .container-content {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  bottom:0;
+  top: 0px;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
   color: lightgrey;
-  width: 100%;
-  padding: 15px;
-}
-
-.profile-photo {
-  margin-bottom: 25px;
-  background-image: url("placeholer.jpg");
-  background-size: cover;
-  background-position: center;
+  width: 80%;
+  max-height: 80%;
 }

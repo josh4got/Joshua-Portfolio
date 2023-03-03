@@ -25,7 +25,12 @@ To use this wepbage you can view information by each Topic. You can also use scr
 
 [Organizing CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
 
+[image-1](https://client.apps.us.bluescape.com/EZhq-Btw-O0ixY6Ghfyb?objectId=6401aeb01fa7234ad1032ca7)
+
+[image-2](https://client.apps.us.bluescape.com/EZhq-Btw-O0ixY6Ghfyb?objectId=6401c8e81fa723663d034bd7)
+
+[image-3](https://www.pexels.com/photo/grayscale-photography-of-people-walking-on-walkalator-2081166/)
+
 ## License
 
-[image-1]https://client.apps.us.bluescape.com/EZhq-Btw-O0ixY6Ghfyb?objectId=6401aeb01fa7234ad1032ca7
 Please see LICENSE in the repo.
