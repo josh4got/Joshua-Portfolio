@@ -13,15 +13,12 @@
 <body>
 <!-- Header -->
     <header>
-        <!-- HParent1 -->
         <section>
             <h1>Joshua</h1>
-            <p>Short Bio</p>
         </section>
-        <!-- HParent2 -->
         <nav>
             <section><a href="#About Me">About Me</a></section>
-            <section><a href="#Work">Work</a></section>
+            <section><a href="#Work">Projects</a></section>
             <section><a href="#Contact">Contact</a></section>
             <!-- Link to Resume will go here <section><a hidden="place-holder">Resume</a></section>  -->
         </nav>
@@ -29,84 +26,93 @@
 
 <!-- Main -- Flexbox holds all project cards -->
     <main>
-        <section>
-                <section id="Work" >
-                    <h2>Projects</h2>
-                </section>
-            <!-- Primary Project Card -->
-                <section class="Project1">
-                    <h2>My Work</h2>
-                    <a href="https://josh4got.github.io/HW1/"><img src="./Assets/images/technology-image-1.jpg" alt="Technology-1" style="width:100%;; object-fit: contain;"></a>
-                    <section class="container-content">
-                        <h3>Refactoring Code</h3>
-                        <p>Html, CSS, GIT</p>
+        <section class="content">
+            <!--Section contains Projects title card and primary project card-->
+            <section class="Project1">
+                    <section id="Work" >
+                        <h2>Projects</h2>
                     </section>
-                </section>
-        </section>
-
-<!-- Article element contails all normal project cards -->
-        <article class="Projects">
-
-            <section class="container2">
-                <a href=""><img src="./Assets/images/Tech-02.jpg" alt="Technology-1" style="width: 100%; object-fit: contain;"></a>
-                <section class="container-content">
-                    <h3>Coming Soon</h3>
-                    <p></p>
-                </section>
+                <!-- Primary Project Card -->
+                    <section class="container1">
+                        <div>Container 1</div>
+                        <!-- <a href="https://josh4got.github.io/HW1/"><img src="./Assets/images/technology-image-1.jpg" class ="project1"></a> -->
+                        <section class="titlecard">
+                            <h3>Refactoring Code</h3>
+                            <p>Html, CSS, GIT</p>
+                        </section>
+                    </section>
             </section>
 
-            <section class="container2">
-                <a href=""><img src=".//Assets/images/Tech-03.jpg" alt="Technology-1" style="width: 100%; object-fit: contain;"></a>
-                <section class="container-content">
-                    <h3>Coming Soon</h3>
-                    <p></p>
-                </section>
-            </section>
-            
-            <section class="container2">
-                <a href=""><img src="./Assets/images/Tech-04.jpg" alt="Technology-1" style="width: 100%; object-fit: contain;"></a>
-                    <section class="container-content">
+    <!-- Article element contails all normal project cards -->
+            <article class="Projects">
+
+                <section class="container2">
+                    <div>Container 2</div>
+                    <!-- <a href=""><img src="./Assets/images/Tech-02.jpg" alt="Technology-1" class ="projects"> -->
+                    <section class="titlecard">
                         <h3>Coming Soon</h3>
                         <p></p>
                     </section>
-            </section> 
+                </section>
 
             <section class="container2">
-                <a href=""><img src="./Assets/images/Tech-05.jpg" alt="Technology-1" style="width: 100%; object-fit: contain;"></a>
-                <section class="container-content">
-                    <h3>Coming Soon</h3>
-                    <p></p>
+                    <div>Container 2</div>   
+                    <!-- <a href=""><img src=".//Assets/images/Tech-03.jpg" alt="Technology-1" class ="projects"></a> -->
+                    <section class="titlecard">
+                        <h3>Coming Soon</h3>
+                        <p></p>
+                    </section>
+                </section>
+                
+                <section class="container2">
+                    <div>Container 2</div>
+                    <!-- <a href=""><img src="./Assets/images/Tech-04.jpg" alt="Technology-1" class ="projects"></a> -->
+                        <section class="titlecard">
+                            <h3>Coming Soon</h3>
+                            <p></p>
+                        </section>
+                </section> 
+
+                <section class="container2">
+                    <div>Container 2</div>
+                    <!-- <a href=""><img src="./Assets/images/Tech-05.jpg" alt="Technology-1" class ="projects"></a> -->
+                    <section class="titlecard">
+                        <h3>Coming Soon</h3>
+                        <p></p>
+                    </section>
                 </section>
             </section>
-    
         </article>
-        <!-- Aside Element is used for About Me section -->
+
         <aside>
             <!-- This box is for profile image -->
-            <section class="Profileimg">
-                <img src="./Assets/images/Portrait.jpg" alt="Technology-1" class="profilepic">  
-            </section>
-            <!-- About me content -->
             <section>
+                Profile Picture Goes here
+                <img src="./Assets/images/Portrait.jpg" alt="Profile Photo" class="avatar">
+            </section>
+                <!-- About me content -->
+            <section class="aboutme">
                 <h2>About Me</h2>
                 <p id="About Me">
-                    This is a brief Bio about me. This is a brief Bio about me.This is
+                    Having always had an affinity for math and science I naturally was drawn towards programming. This is a brief Bio about me.This is
                     This is a brief Bio about me.This is a brief Bio about me.
                     This is a brief Bio about me.This is a brief Bio about me.
                     This is a brief Bio about me.This is a brief Bio about me. 
                 </p>
             </section>
         </aside> 
+        
     </main> 
+
 <!-- Footer contants contact info -->
     <footer>
         <section>
             <h2>Contact</h2>
         </section>
-        <section id="Contact">
+        <nav id="Contact">
            <section><a href="mailto:joshbottied1@gmail.com">Email</a></section>
            <section><a href="https://github.com/josh4got">Portfolio</a></section>
-           <section><a href="---">LinkedIn</a></section>
-        </section>
+           <section><a href="https://www.linkedin.com/in/josh-bott-39a597190/">LinkedIn</a></section>
+        </nav>
     </footer>
 </body>
