@@ -1,4 +1,4 @@
-/* variables to easily change color pallete of the page*/
+/* root variables*/
 :root {
   --background-color:#13293d;
   --text-color:black;
@@ -14,7 +14,7 @@
 
 body {
   font-family:Arial, Helvetica, sans-serif;
-  /* background-color: #CBF6F0; */
+  background-color: red;
   color: var(--text-color);
 }
 
@@ -22,6 +22,7 @@ main {
   margin: 5px;
   display: flex;
   flex-direction: column;
+  min-height: 85vh;
 }
 
 aside{
@@ -41,6 +42,18 @@ nav {
   width: 15%;
 }
 
+/* Text Styling*/
+h1 { font-size: 2.5em;}
+h2 {font-size: 2em;
+  padding: 10px;
+}
+main h2 {text-align: center;}
+h3 { font-size: 1.5em;}
+
+p {font-size: 1em;
+  text-align: center;
+}
+
 /* Header and Footer styling */
 header,
 footer {
@@ -49,7 +62,7 @@ footer {
   align-items: center;
   justify-content: flex-start;
   background-color: var(--background-color);
-  min-height: 80px;
+  min-height: 5vh;
 }
 
 header section,
@@ -71,30 +84,19 @@ footer {
   flex-direction: row;
 }
 
-/* Styling for text elements */
-h1 { font-size: 2.5em;
-/* text-align: center;*/
-}
-h2 {font-size: 2em;
-  padding: 10px;
-  /* text-align: center; */
-}
-h3 { font-size: 1.5em;}
-p {font-size: 1em;
-  text-align: center;
-}
-
 /* Utilities */
 .content{
   display: flex;
   flex-direction: column;
+  align-items: space-between;
   background-color: blue;
+  min-height: 75vh;
 }
 
 .container1 {
   position: relative;
   flex-basis: 100px;
-  min-height: 60px;
+  min-height: 30vh;
 }
 .container2 {
   display: flex;
@@ -104,7 +106,7 @@ p {font-size: 1em;
   border-width: 5px;
   border-color: red;
   flex-bases: 50px;
-  min-height: 30px;
+  min-height: 15vh;
 }
 
 .Projects{
@@ -112,28 +114,16 @@ p {font-size: 1em;
   flex-direction: column;
   margin: 5px;
   gap: 5px;
-
-}
-
-.projects {
-  object-fit: cover;
-  max-width: 100%;
 }
 
 .Project1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex-basis: 10em;
   max-width: 100%;
-  background-color: brown;
+  background-position: center, center;
   margin: 5px;
-}
-
-.project1 {
-  object-fit: cover; 
-  width: 100%;
+  background-image: url(https://imageio.forbes.com/specials-images/imageserve/61d52d4e3a76ed81ac034ea8/0x0.jpg?format=jpg&width=1200);
 }
 
 .aboutme{
@@ -144,7 +134,6 @@ p {font-size: 1em;
   margin: 5px;
   gap: 5px;
   background-color: green;
-  
 }
 
 .titlecard { 
@@ -155,7 +144,6 @@ p {font-size: 1em;
   background: rgba(0, 0, 0, 0.5);
   color: lightgrey;
   text-align: center;
-  
 }
 
 .avatar {
@@ -175,10 +163,12 @@ p {font-size: 1em;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    height: ;
   }
 
   .content{
     flex-direction: row;
+    min-height: 70vh;
   }
 
   .Project1,
@@ -186,6 +176,8 @@ p {font-size: 1em;
     min-width: 48vw;
     margin: 5px;
   }
+
+  .container2 { min-height: 15vh;}
 
 
 }
@@ -196,13 +188,13 @@ p {font-size: 1em;
   .Project1,
   .container2 {min-width: 40vw;}
 
-  .container2 {min-height: 15vh;}
+  .container2 {min-height: 20vh;}
 
   main {flex-direction: row;}
   aside {flex-direction: column;}
   .aboutme {
     flex: wrap;
-    min-height: 45vh;
+    min-height: 40vh;
   }
 
 
