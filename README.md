@@ -6,11 +6,15 @@ This is a professional web developer profile page for Joshua Bott. This wepbage 
 
 ## Installation
 
-N/A
+This webpage is deplayed at ""
+[Profile]()
 
 ## Usage
 
 To use this wepbage you can view web developement projects I have completed. You can click on images of each project to see the full deployed project. You can also utilize links to navigate the webpage contact me directly.
+
+[]
+
 
 ## Credits
 
