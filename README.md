@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a webpage built to display my projects and knowledge of varius web developement topics.
+This is a professional web developer profile page for Joshua Bott. This wepbage was made to provide potential employers an opportunity to see my skills and learn more about me. 
 
 ## Installation
 
@@ -10,26 +10,17 @@ N/A
 
 ## Usage
 
-To use this wepbage you can view information by each Topic. You can also use screen reader technology to get a description of each image or icon. You can also see this information as well as the use of semantic HTML elements in the souce code by using Devtools.
+To use this wepbage you can view web developement projects I have completed. You can click on images of each project to see the full deployed project. You can also utilize links to navigate the webpage contact me directly.
 
 ## Credits
 
-
 [Professional Readme Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-
-[HTML Attributes](https://www.w3schools.com/html/html_attributes.asp)
-
-[Alt Attribule](https://www.w3schools.com/tags/att_img_alt.asp)
-
-[Semantic HTML Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
 
 [Organizing CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
 
-[image-1](https://client.apps.us.bluescape.com/EZhq-Btw-O0ixY6Ghfyb?objectId=6401aeb01fa7234ad1032ca7)
+[Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
 
-[image-2](https://client.apps.us.bluescape.com/EZhq-Btw-O0ixY6Ghfyb?objectId=6401c8e81fa723663d034bd7)
-
-[image-3](https://www.pexels.com/photo/grayscale-photography-of-people-walking-on-walkalator-2081166/)
+[Objectfit](https://www.w3schools.com/css/css3_object-fit.asp)
 
 ## License
 
