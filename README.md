@@ -6,15 +6,13 @@ This is a professional web developer profile page for Joshua Bott. This wepbage 
 
 ## Installation
 
-This webpage is deplayed at ""
-[Profile]()
+[DeployedWebpage](https://josh4got.github.io/Joshua-Portfolio/)
+
+[Profile](./Assets/images/screenshot.PNG)
 
 ## Usage
 
 To use this wepbage you can view web developement projects I have completed. You can click on images of each project to see the full deployed project. You can also utilize links to navigate the webpage contact me directly.
-
-[]
-
 
 ## Credits
 
