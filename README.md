@@ -8,7 +8,7 @@ This is a professional web developer profile page for Joshua Bott. This wepbage 
 
 [DeployedWebpage](https://josh4got.github.io/Joshua-Portfolio/)
 
-[Profile](./Assets/images/screenshot.PNG)
+![Profile](./Assets/images/screenshot.PNG)
 
 ## Usage
 
