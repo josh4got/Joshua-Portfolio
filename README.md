@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a professional web developer profile page for Joshua Bott. This wepbage was made to provide potential employers an opportunity to see my skills and learn more about me. 
+This is a professional web developer profile page for Joshua Bott. This wepbage was made to provide potential employers an opportunity to see my skills and learn more about me.
 
 ## Installation
 
@@ -12,7 +12,7 @@ This is a professional web developer profile page for Joshua Bott. This wepbage 
 
 ## Usage
 
-To use this wepbage you can view web developement projects I have completed. You can click on images of each project to see the full deployed project. You can also utilize links to navigate the webpage contact me directly.
+To use this webpage you can view web developement projects I have completed. You can click on images of each project to see the full deployed project. You can also utilize links to navigate the webpage contact me directly.
 
 ## Credits
 
