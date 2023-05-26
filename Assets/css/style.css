@@ -1,7 +1,8 @@
-/* root variables*/
+/* Root Variables */
 :root {
   --background-color: #e5d4c0;
-  --text-color: #323232;
+  --text-color: #36454f;
+  --alt-text-color: #708090;
 }
 
 /* General Styles */
@@ -19,36 +20,49 @@ aside,
 nav {
   display: flex;
   flex-direction: column;
+  margin: 5px;
 }
 
 main {
-  margin: 5px;
   min-height: 88vh;
 }
 
 aside {
-  margin: 5px;
   justify-content: center;
   align-items: center;
 }
 
 nav {
   font-size: 1em;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  justify-self: flex-end;
+  margin: 20px;
+  font-weight: bold;
 }
 
-/* Text Styling*/
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+nav li {
+  margin: 0;
+}
+
+/* Text Styling */
 h1,
 h2,
 h3,
 p {
   text-align: center;
-}
-
-h1,
-h2 {
   padding: 10px;
 }
 
@@ -64,24 +78,23 @@ h3 {
 p {
   font-size: 0.75em;
 }
+a {
+  text-decoration: none;
+  color: var(--alt-text-color);
+}
 
-/* Header and Footer styling */
+/* Header and Footer Styling */
 header,
 footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
   background-color: var(--background-color);
   min-height: 4vh;
   flex-wrap: nowrap;
   gap: 5px;
-}
-
-nav {
-  font-size: 1.25em;
-  display: flex;
-  flex-direction: row;
+  min-height: 3vh;
   justify-content: space-between;
   align-items: center;
 }
@@ -91,7 +104,7 @@ footer {
 }
 
 /* Image Styling */
-.Project1 img,
+.project1 img,
 article img,
 .avatar {
   display: block;
@@ -107,7 +120,7 @@ article img {
   max-width: 100vw;
 }
 
-.Project1 img {
+.project1 img {
   height: 65vh;
 }
 
@@ -122,14 +135,9 @@ article img {
 }
 
 /* Utilities */
-
 .content {
   align-items: space-between;
   min-height: 75vh;
-}
-
-.container1 {
-  min-height: 30vh;
 }
 
 .container1,
@@ -140,28 +148,31 @@ article img {
   align-items: center;
   display: flex;
   position: relative;
+  gap: 5px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .container2 {
   min-height: 15vh;
   background-color: #004e64;
+  border-radius: 10px;
 }
 
-.content,
-.Projects,
-.Project1,
+.projects,
+.project1,
 .aboutme {
   display: flex;
   flex-direction: column;
   margin: 5px;
-  gap: 5px;
+  gap: 5px;projects
 }
 
-.Projects {
+.projects {
   justify-content: space-evenly;
 }
 
-.Project1 {
+.project1 {
   max-width: 100vw;
 }
 
@@ -174,16 +185,14 @@ article img {
   position: absolute;
   top: 5%;
   left: 5%;
-  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
   color: lightgrey;
   text-align: center;
 }
 
-/* apply layout changes when width is 768px+ */
+/* Responsive Layout */
 @media screen and (min-width: 768px) {
   aside {
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     min-height: 10vh;
@@ -192,13 +201,6 @@ article img {
   .content {
     flex-direction: row;
     min-height: 70vh;
-  }
-
-  .Project1 img,
-  article img,
-  .container1,
-  .container2 {
-    width: 48vw;
   }
 
   h1 {
@@ -218,13 +220,12 @@ article img {
   }
 }
 
-/* apply layout changes when width is 1280px+ */
 @media screen and (min-width: 1280px) {
-  .Project1 img,
-  article img,
+  /* .Project1 img,
+  article img, */
   .container1,
   .container2 {
-    width: 35vw;
+    width: 70vw;
   }
 
   article img {
@@ -245,6 +246,7 @@ article img {
 
   aside {
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .aboutme {
@@ -253,10 +255,10 @@ article img {
   }
 
   h1 {
-    font-size: 2.75;
+    font-size: 2.75em;
   }
   h2 {
-    font-size: 2.25;
+    font-size: 2.25em;
   }
   h3 {
     font-size: 1.75em;
